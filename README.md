@@ -27,7 +27,7 @@ To view the generated Swagger UI documentation go to: [http://localhost:8080/swa
 
 - **Read Json File src/main/resources/json**
 
-![Json Read](https://github.com/tugayesilyurt/jumbo-store-service/blob/main/assets/ReadJson.PNG)
+![Json Read](https://github.com/tugayesilyurt/jumbo-store-service/blob/master/assets/ReadJson.PNG)
 
 
 ### EndPoints ###
