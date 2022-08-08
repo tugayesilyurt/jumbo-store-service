@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "25b1ed1c-7fdd-4de6-9a11-8b4101559e0b",
+		"name": "JumboStoreService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetNearestJumboStores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/store/nearest?latitude=52.090736&longitude=5.121420&limit=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"store",
+						"nearest"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "52.090736"
+						},
+						{
+							"key": "longitude",
+							"value": "5.121420"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveJumboStore",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"city\": \"Zoetermeer\",\r\n      \"postalCode\": \"2719 CH\",\r\n      \"street\": \"Quirinegang\",\r\n      \"street2\": \"201\",\r\n      \"street3\": \"\",\r\n      \"addressName\": \"Jumbo Zoetermeer Quirinegana\",\r\n      \"longitude\": \"4.477336\",\r\n      \"latitude\": \"52.043506\",\r\n      \"complexNumber\": \"32224\",\r\n      \"showWarningMessage\": true,\r\n      \"todayOpen\": \"08:00\",\r\n      \"locationType\": \"SupermarktPuP\",\r\n      \"collectionPoint\": true,\r\n      \"sapStoreID\": \"3177\",\r\n      \"todayClose\": \"20:00\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJumboStoreById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/store/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"store",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteJumboStoreById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/store/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"store",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateJumboStore",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"city\": \"tugay\",\r\n      \"postalCode\": \"2719 CH\",\r\n      \"street\": \"Quirinegang\",\r\n      \"street2\": \"201\",\r\n      \"street3\": \"\",\r\n      \"addressName\": \"Jumbo Zoetermeer Quirinegana\",\r\n      \"uuid\": \"vNYKYx4XH7YAAAFZar8nMJWW\",\r\n      \"longitude\": \"4.477336\",\r\n      \"latitude\": \"52.043506\",\r\n      \"complexNumber\": \"32224\",\r\n      \"showWarningMessage\": true,\r\n      \"todayOpen\": \"08:00\",\r\n      \"locationType\": \"SupermarktPuP\",\r\n      \"collectionPoint\": true,\r\n      \"sapStoreID\": \"3177\",\r\n      \"todayClose\": \"20:00\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/store/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"store",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
